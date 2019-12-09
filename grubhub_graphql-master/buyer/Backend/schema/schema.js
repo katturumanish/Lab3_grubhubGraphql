@@ -3,7 +3,7 @@ const _ = require("lodash");
 // connect to mongo db
 const mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
-mongo_url = "mongodb://localhost:27017/grabhub";
+mongo_url = "mongodb+srv://manish:<password>@cluster0-nfady.mongodb.net/test?retryWrites=true&w=majority";
 mongoose
   .connect(mongo_url, {
     useUnifiedTopology: true,
